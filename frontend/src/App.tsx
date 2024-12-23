@@ -1,8 +1,8 @@
 import React from 'react';
-import StartText from './screen1.tsx';
+import NavBar from './components/NavBar';
 
 function App() {
-  return <div ><StartText /></div>;
+  return <div ><NavBar /></div>;
 }
 
 export default App;
