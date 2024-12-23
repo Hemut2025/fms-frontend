@@ -1,0 +1,21 @@
+.app {
+    display: flex;
+  }
+
+.main-content {
+margin-left: 8%;
+padding: 3rem;
+width: 98%;
+min-height: 100vh;
+background-color: #f5f5f5;
+transition: margin-left 0.3s ease;
+}
+  
+.main-content.collapsed {
+margin-left: 25px;
+}
+  
+.page-content {
+font-family: 'Barlow', sans-serif;
+}
+  
