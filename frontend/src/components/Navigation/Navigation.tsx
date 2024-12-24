@@ -1,17 +1,27 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 import "./Navigation.css";
 
 const Navigation = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const toggleNav = () => {
     setIsCollapsed(!isCollapsed);
+    document.querySelector(".main-content")?.classList.toggle("expanded");
   };
   return (
     <div className={`navigation ${isCollapsed ? "collapsed" : ""}`}>
       <div className="nav-header">
         <h1 className="nav-title">hemut</h1>
-        <button className="toggle-btn" onClick={toggleNav}></button>
+        <button className="toggle-btn" onClick={toggleNav}>
+          <FontAwesomeIcon
+            icon={isCollapsed ? faChevronRight : faChevronLeft}
+          />
+        </button>
       </div>
 
       <nav>
