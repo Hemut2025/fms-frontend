@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;900&display=swap');
 
 .navigation {
-  width: 10%;
+  width: 130px;
   height: 100vh;
   background-color: #333;
   transition: all 0.3s ease;
@@ -84,7 +84,7 @@ nav {
 
 .navigation.collapsed .nav-item.selected {
   transform: translateX(-5vw); 
-  transition: transform 0.3s ease;
+  transition: transform 1s ease;
 }
 .nav-item:hover {
   color: black;
