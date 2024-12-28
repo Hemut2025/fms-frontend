@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    
 }
 
 .tab-icon {
@@ -51,6 +50,7 @@ background-color: #384E5B;
 color: white;
 transition: all 0.3s ease;
 border-radius: 0 25px 25px 0;
+position: relative;
 
 }
 

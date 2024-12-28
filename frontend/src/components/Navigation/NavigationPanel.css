@@ -40,7 +40,6 @@ nav {
   display: flex;
   flex-direction: column;
   padding: 1rem 0;
-  position: relative;
   width:240px;
 }
 
