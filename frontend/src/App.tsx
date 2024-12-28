@@ -1,34 +1,39 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navigation from "./components/Navigation/Navigation";
+import NavigationPanel from "./components/Navigation/NavigationPanel";
 import Dashboard from "./components/Pages/Dashboard";
 import Loads from "./components/Pages/Loads";
 import Accounting from "./components/Pages/Accounting";
 import Maintenance from "./components/Pages/Maintenance";
 import Reports from "./components/Pages/Reports";
-import Tools from "./components/Pages/Tools";
-import Dispatching from "./components/Pages/Dispatching";
-import Invoices from "./components/Pages/Invoices";
+import Settings from "./components/Pages/Settings";
+import Logout from "./components/Pages/Logout"; // Import the Logout component
 import "./App.css";
 
 const App = () => {
   return (
     <Router>
-      <div className="app">
-        <Navigation />
-        <main className="main-content">
-          <Routes>
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/loads" element={<Loads />} />
-            <Route path="/accounting" element={<Accounting />} />
-            <Route path="/maintenance" element={<Maintenance />} />
-            <Route path="/reports" element={<Reports />} />
-            <Route path="/tools" element={<Tools />} />
-            <Route path="/dispatching" element={<Dispatching />} />
-            <Route path="/invoices" element={<Invoices />} />
-            <Route path="/" element={<Dashboard />} />
-          </Routes>
-        </main>
-      </div>
+      <Routes>
+        <Route
+          path="/*"
+          element={
+            <div className="app">
+              <NavigationPanel />
+              <main className="main-content">
+                <Routes>
+                  <Route path="/dashboard" element={<Dashboard />} />
+                  <Route path="/loads" element={<Loads />} />
+                  <Route path="/accounting" element={<Accounting />} />
+                  <Route path="/maintenance" element={<Maintenance />} />
+                  <Route path="/reports" element={<Reports />} />
+                  <Route path="/settings" element={<Settings />} />
+                  <Route path="/" element={<Dashboard />} />
+                </Routes>
+              </main>
+            </div>
+          }
+        />
+        <Route path="/logout" element={<Logout />} />
+      </Routes>
     </Router>
   );
 };
