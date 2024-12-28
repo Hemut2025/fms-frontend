@@ -10,7 +10,7 @@ import Dispatching from "./components/Pages/Dispatching";
 import Invoices from "./components/Pages/Invoices";
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <div className="app">
@@ -31,6 +31,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;

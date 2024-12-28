@@ -1,23 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;900&display=swap');
 
 .navigation {
-  width: 130px;
+  width: 200px;
   height: 100vh;
   background-color: #333;
   transition: all 0.3s ease;
   position: fixed;
-  left: 0;
-  top: 0;
   z-index: 1000;
+  font-family: 'Barlow', sans-serif;
+
 }
 
-.navigation.collapsed {
-  width: 0;
-}
-.navigation.collapsed .nav-item,
-.navigation.collapsed .nav-title {
-  visibility: hidden;
-}
 .nav-header {
   padding: 1rem;
   display: flex;
@@ -49,7 +42,6 @@
   align-items: center;
   justify-content: center;
   z-index: 1004;
-  transition: left 0.3 ease;
 }
 
 nav {
@@ -62,9 +54,7 @@ nav {
   padding: 0.8rem 1rem;
   color: white;
   text-decoration: none;
-  font-family: 'Barlow', sans-serif;
   font-weight: 400;
-  transition: all 0.3s ease;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -78,13 +68,22 @@ nav {
   width: 100%;
   height: 100%;
   background-color: #ffd700;
+  border-radius: 0 15px 15px 0;
   transition: left 0.3s ease;
   z-index: -1;
 }
 
+.navigation.collapsed {
+  width: 0;
+}
+.navigation.collapsed .nav-item,
+.navigation.collapsed .nav-title {
+  visibility: hidden;
+}
+
 .navigation.collapsed .nav-item.selected {
   transform: translateX(-5vw); 
-  transition: transform 1s ease;
+  transition: transform .3s ease;
 }
 .nav-item:hover {
   color: black;
@@ -98,6 +97,8 @@ nav {
   background-color: #444;
   color: white;
   transition: all 0.3s ease;
+  border-radius: 0 15px 15px 0;
+  
 }
 
 

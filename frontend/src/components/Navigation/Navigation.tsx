@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,
@@ -9,15 +9,12 @@ import "./Navigation.css";
 
 const Navigation = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const [selectedTab, setSelectedTab] = useState("");
+  const location = useLocation();
+  const currentPath = location.pathname.substring(1).toLowerCase();
 
   const toggleNav = () => {
     setIsCollapsed(!isCollapsed);
     document.querySelector(".main-content")?.classList.toggle("expanded");
-  };
-
-  const handleTabClick = (tab: string) => {
-    setSelectedTab(tab);
   };
 
   return (
@@ -35,64 +32,56 @@ const Navigation = () => {
         <NavLink
           to="/dashboard"
           className={`nav-item ${
-            selectedTab === "dashboard" ? "selected" : ""
+            currentPath === "dashboard" ? "selected" : ""
           }`}
-          onClick={() => handleTabClick("dashboard")}
         >
           Dashboard
         </NavLink>
         <NavLink
           to="/loads"
-          className={`nav-item ${selectedTab === "loads" ? "selected" : ""}`}
-          onClick={() => handleTabClick("loads")}
+          className={`nav-item ${currentPath === "loads" ? "selected" : ""}`}
         >
           Loads
         </NavLink>
         <NavLink
           to="/accounting"
           className={`nav-item ${
-            selectedTab === "accounting" ? "selected" : ""
+            currentPath === "accounting" ? "selected" : ""
           }`}
-          onClick={() => handleTabClick("accounting")}
         >
           Accounting
         </NavLink>
         <NavLink
           to="/maintenance"
           className={`nav-item ${
-            selectedTab === "maintenance" ? "selected" : ""
+            currentPath === "maintenance" ? "selected" : ""
           }`}
-          onClick={() => handleTabClick("maintenance")}
         >
           Maintenance
         </NavLink>
         <NavLink
           to="/reports"
-          className={`nav-item ${selectedTab === "reports" ? "selected" : ""}`}
-          onClick={() => handleTabClick("reports")}
+          className={`nav-item ${currentPath === "reports" ? "selected" : ""}`}
         >
           Reports
         </NavLink>
         <NavLink
           to="/tools"
-          className={`nav-item ${selectedTab === "tools" ? "selected" : ""}`}
-          onClick={() => handleTabClick("tools")}
+          className={`nav-item ${currentPath === "tools" ? "selected" : ""}`}
         >
           Tools
         </NavLink>
         <NavLink
           to="/dispatching"
           className={`nav-item ${
-            selectedTab === "dispatching" ? "selected" : ""
+            currentPath === "dispatching" ? "selected" : ""
           }`}
-          onClick={() => handleTabClick("dispatching")}
         >
           Dispatching
         </NavLink>
         <NavLink
           to="/invoices"
-          className={`nav-item ${selectedTab === "invoices" ? "selected" : ""}`}
-          onClick={() => handleTabClick("invoices")}
+          className={`nav-item ${currentPath === "invoices" ? "selected" : ""}`}
         >
           Invoices
         </NavLink>
