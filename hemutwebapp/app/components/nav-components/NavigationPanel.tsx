@@ -36,36 +36,42 @@ const NavigationPanel = () => {
             icon={isCollapsed ? faChevronRight : faChevronLeft}
           />
         </button>
-        <nav>
-          <ButtonTab href="/dashboard" icon={TruckIcon} iconType="stroke">
-            Dashboard
-          </ButtonTab>
 
-          <ButtonTab href="/loads" icon={TruckIcon} iconType="stroke">
-            Loads
-          </ButtonTab>
+        <div className="nav-components">
+          <nav>
+            <ButtonTab href="/dashboard" icon={TruckIcon} iconType="stroke">
+              Dashboard
+            </ButtonTab>
 
-          <ButtonTab href="/accounting" icon={ActivityIcon} iconType="fill">
-            Accounting
-          </ButtonTab>
+            <ButtonTab href="/loads" icon={TruckIcon} iconType="stroke">
+              Loads
+            </ButtonTab>
 
-          <ButtonTab href="/maintenance" icon={MaintenanceIcon} iconType="fill">
-            Maintenance
-          </ButtonTab>
+            <ButtonTab href="/accounting" icon={ActivityIcon} iconType="fill">
+              Accounting
+            </ButtonTab>
 
-          <ButtonTab href="/reports" icon={ReportsIcon} iconType="fill">
-            Reports
-          </ButtonTab>
-        </nav>
-        {/* <div style={{ height: "5rem" }} /> */}
-        <nav className="bottom">
-          <ButtonTab href="/settings" icon={SettingsIcon} iconType="stroke">
-            Settings
-          </ButtonTab>
-          <ButtonTab href="/logout" icon={LogoutIcon} iconType="stroke">
-            Log Out
-          </ButtonTab>
-        </nav>
+            <ButtonTab
+              href="/maintenance"
+              icon={MaintenanceIcon}
+              iconType="fill"
+            >
+              Maintenance
+            </ButtonTab>
+
+            <ButtonTab href="/reports" icon={ReportsIcon} iconType="fill">
+              Reports
+            </ButtonTab>
+          </nav>
+          <nav className="bottom">
+            <ButtonTab href="/settings" icon={SettingsIcon} iconType="stroke">
+              Settings
+            </ButtonTab>
+            <ButtonTab href="/logout" icon={LogoutIcon} iconType="stroke">
+              Log Out
+            </ButtonTab>
+          </nav>
+        </div>
       </div>
     </>
   );
