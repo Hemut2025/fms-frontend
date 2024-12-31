@@ -1,0 +1,32 @@
+.topBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 81vw;
+    height:5vh;
+    margin-top: 4px;
+    /* border: 5px blue solid; */
+}
+.header {
+    width: 81vw;
+    min-height:15vh;
+    /* border: 5px green solid; */
+}
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 81vw;
+    height:70vh;
+    /* border: 5px orange solid; */
+}
+.info {
+    height: 70vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+

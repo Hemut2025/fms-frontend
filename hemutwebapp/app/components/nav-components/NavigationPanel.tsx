@@ -7,14 +7,14 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import "./NavigationPanel.css";
-import TruckIcon from "../assets/TruckIcon";
-import ReportsIcon from "../assets/ReportsIcon";
-import LogoutIcon from "../assets/LogoutIcon";
-import MaintenanceIcon from "../assets/MaintenanceIcon";
-import ActivityIcon from "../assets/ActivityIcon";
-import SettingsIcon from "../assets/SettingsIcon";
+import TruckIcon from "../../assets/TruckIcon";
+import ReportsIcon from "../../assets/ReportsIcon";
+import LogoutIcon from "../../assets/LogoutIcon";
+import MaintenanceIcon from "../../assets/MaintenanceIcon";
+import ActivityIcon from "../../assets/ActivityIcon";
+import SettingsIcon from "../../assets/SettingsIcon";
 import ButtonTab from "./ButtonTab";
-import Image from "next/image";
+import HemutLogo from "@/app/assets/HemutLogo";
 
 const NavigationPanel = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -27,13 +27,10 @@ const NavigationPanel = () => {
   return (
     <>
       <div className={`navigation ${isCollapsed ? "collapsed" : ""}`}>
-        <Image
-          className="logo"
-          src={"/hemutlogo.png"}
-          alt="logo"
-          width={150}
-          height={165}
-        />
+        <div className="nav-header">
+          <HemutLogo isCollapsed={isCollapsed} color="#FDDA0D" width="100" />
+        </div>
+
         <button className="toggle-btn" onClick={toggleNav}>
           <FontAwesomeIcon
             icon={isCollapsed ? faChevronRight : faChevronLeft}
@@ -60,7 +57,7 @@ const NavigationPanel = () => {
             Reports
           </ButtonTab>
         </nav>
-        <div style={{ height: "16rem" }} />
+        {/* <div style={{ height: "5rem" }} /> */}
         <nav className="bottom">
           <ButtonTab href="/settings" icon={SettingsIcon} iconType="stroke">
             Settings

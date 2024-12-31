@@ -1,0 +1,12 @@
+.activitySummary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 43vw;
+    height: 70vh;
+    /* border: 5px pink solid; */
+    margin-left: 1vw;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    margin-left: 38px;
+}

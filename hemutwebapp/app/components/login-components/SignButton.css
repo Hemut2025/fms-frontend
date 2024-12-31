@@ -1,0 +1,14 @@
+.logButton {
+    min-height: 6.2vh;
+    background-color: black;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logButton p {
+    margin:0px;
+    padding: 0px 1px;
+    white-space: nowrap;
+    overflow: hidden;
+}

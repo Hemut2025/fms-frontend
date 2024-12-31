@@ -1,5 +1,4 @@
-// src/app/layout.tsx
-import NavigationPanel from "./components/NavigationPanel";
+import NavigationPanel from "./components/nav-components/NavigationPanel";
 import "./globals.css";
 
 export const metadata = {

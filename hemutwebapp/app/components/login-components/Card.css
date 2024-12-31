@@ -1,0 +1,16 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 5px blue solid; */
+}
+.card p {
+    padding: 3px 0px;
+    margin:0;
+    white-space: nowrap;
+}
+.input-bar {
+    border: 1px #666666 solid;
+    border-radius: 15px;
+    min-height: 50px;
+}

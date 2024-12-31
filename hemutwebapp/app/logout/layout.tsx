@@ -1,3 +1,4 @@
+import "../styles/login.css";
 export const metadata = {
   title: "Logout",
   description: "Logout Screen",
@@ -11,7 +12,7 @@ export default function LogoutLayout({
   return (
     <html lang="en">
       <body>
-        <main>{children}</main> {/* No NavigationPanel here */}
+        <main>{children}</main>
       </body>
     </html>
   );
