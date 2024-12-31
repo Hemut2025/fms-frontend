@@ -52,3 +52,7 @@ body {
   /* overflow: hidden; */
   font-family: 'Poppins', sans-serif;
 }
+
+/* .page-content::-webkit-scrollbar {
+  display: none;
+} */

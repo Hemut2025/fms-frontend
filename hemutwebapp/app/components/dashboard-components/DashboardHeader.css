@@ -8,10 +8,6 @@
 
     min-width: 250px;
     min-height: 150px;
-
-    position: sticky;
-    top: 20px;
-    z-index: 100;
 }
 .header-item {
     width: 100%;
@@ -25,8 +21,8 @@
     margin-top: 0px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: clamp(24px, 3vw, 32px);
+    /* text-overflow: ellipsis;
+    font-size: clamp(24px, 3vw, 32px); */
 }
 
 /* .header-item.welcome {
@@ -36,8 +32,8 @@
     margin-top: 0px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: clamp(16px, 2vw, 19px);
+    /* text-overflow: ellipsis;
+    font-size: clamp(16px, 2vw, 19px); */
 }
 .header-item.messages {
     /* border: 5px pink solid; */

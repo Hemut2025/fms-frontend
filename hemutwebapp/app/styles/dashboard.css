@@ -8,7 +8,7 @@
     /* border: 5px blue solid; */
 }
 .header {
-    width: 81vw;
+    min-width: 81vw;
     min-height:15vh;
     /* border: 5px green solid; */
 }
@@ -16,8 +16,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 81vw;
-    height:70vh;
+    min-width: 81vw;
+    min-height:70vh;
     /* border: 5px orange solid; */
 }
 .info {
