@@ -1,0 +1,9 @@
+/* .greeting {
+    border: 5px purple solid;
+} */
+.greeting p {
+    padding: 3px 0px;
+    margin:0;
+    white-space: nowrap;
+    overflow: hidden;
+}

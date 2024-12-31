@@ -1,0 +1,11 @@
+.signUpFlag {
+    min-height: 4vh;
+    /* border: 5px red solid; */
+}
+
+.signUpFlag p {
+    margin:0px;
+    padding: 0px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}

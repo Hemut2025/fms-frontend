@@ -6,6 +6,7 @@
 
 .tab-icon {
     margin-right: 1.1rem;
+    padding-top:5px;
 }
 
 .nav-item {
@@ -43,7 +44,6 @@ left: 0;
 }
 
 .nav-item.selected {
-/* transition: transform, color, background-color 0.3s ease; */
 transition: all 0.3s ease;
 background-color: #384E5B;
 color: white;
