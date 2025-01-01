@@ -1,4 +1,4 @@
-import "../styles/login.css";
+import "../globals.css";
 export const metadata = {
   title: "Logout",
   description: "Logout Screen",
