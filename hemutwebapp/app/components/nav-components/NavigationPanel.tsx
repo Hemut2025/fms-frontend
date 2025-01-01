@@ -39,32 +39,44 @@ const NavigationPanel = () => {
 
         <div className="nav-components">
           <nav>
-            <ButtonTab href="/dashboard" icon={TruckIcon} iconType="stroke">
+            <ButtonTab
+              href="/home/dashboard"
+              icon={TruckIcon}
+              iconType="stroke"
+            >
               Dashboard
             </ButtonTab>
 
-            <ButtonTab href="/loads" icon={TruckIcon} iconType="stroke">
+            <ButtonTab href="/home/loads" icon={TruckIcon} iconType="stroke">
               Loads
             </ButtonTab>
 
-            <ButtonTab href="/accounting" icon={ActivityIcon} iconType="fill">
+            <ButtonTab
+              href="/home/accounting"
+              icon={ActivityIcon}
+              iconType="fill"
+            >
               Accounting
             </ButtonTab>
 
             <ButtonTab
-              href="/maintenance"
+              href="/home/maintenance"
               icon={MaintenanceIcon}
               iconType="fill"
             >
               Maintenance
             </ButtonTab>
 
-            <ButtonTab href="/reports" icon={ReportsIcon} iconType="fill">
+            <ButtonTab href="/home/reports" icon={ReportsIcon} iconType="fill">
               Reports
             </ButtonTab>
           </nav>
           <nav className="bottom">
-            <ButtonTab href="/settings" icon={SettingsIcon} iconType="stroke">
+            <ButtonTab
+              href="/home/settings"
+              icon={SettingsIcon}
+              iconType="stroke"
+            >
               Settings
             </ButtonTab>
             <ButtonTab href="/logout" icon={LogoutIcon} iconType="stroke">
