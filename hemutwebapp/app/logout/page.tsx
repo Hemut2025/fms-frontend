@@ -1,5 +1,4 @@
 "use client";
-// import "../styles/globals.css";
 import "../styles/loginpage.css";
 import HemutLogo from "../assets/HemutLogo";
 import Card from "../components/login-components/Card";
