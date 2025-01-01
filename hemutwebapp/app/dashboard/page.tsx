@@ -1,4 +1,5 @@
 import "../styles/dashboard.css";
+import "../globals.css";
 import DashboardHeader from "../components/dashboard-components/DashboardHeader";
 import ActivitySummary from "../components/dashboard-components/ActivitySummary";
 import PnlBreakdown from "../components/dashboard-components/PnlBreakdown";

@@ -1,15 +1,16 @@
 "use client";
-import "../components/login-components/loginpage.css";
+import "../styles/loginpage.css";
 import HemutLogo from "../assets/HemutLogo";
 import Card from "../components/login-components/Card";
 import SignButton from "../components/login-components/SignButton";
 import AccountPrompt from "../components/login-components/AccountPrompt";
 import Greeting from "../components/login-components/Greeting";
 import LogIn from "../components/login-components/LogIn";
+import LogInHome from "../components/login-components/LogInHome";
 import { useState } from "react";
 const LogoutPage = () => {
   return (
-    <div className="home">
+    <LogInHome>
       <div className="leftLogo">
         <HemutLogo color="#072031" width="130" />
       </div>
@@ -27,11 +28,11 @@ const LogoutPage = () => {
           <AccountPrompt
             message="Don't have an account?"
             linkText="Sign up"
-            href="#"
+            href="/logout/signup"
           />
         </LogIn>
       </div>
-    </div>
+    </LogInHome>
   );
 };
 

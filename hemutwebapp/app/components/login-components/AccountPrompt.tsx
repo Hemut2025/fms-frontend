@@ -1,9 +1,12 @@
 import "./AccountPrompt.css";
+import Link from "next/link";
+
 type accountPromptProps = {
   message: string;
   linkText: string;
   href?: string;
 };
+
 const AccountPrompt = ({
   message,
   linkText,
@@ -21,7 +24,7 @@ const AccountPrompt = ({
         }}
       >
         {message}
-        <a
+        <Link
           href={href}
           style={{
             fontFamily: "Poppins",
@@ -35,9 +38,10 @@ const AccountPrompt = ({
           }}
         >
           {linkText}
-        </a>
+        </Link>
       </p>
     </div>
   );
 };
+
 export default AccountPrompt;
