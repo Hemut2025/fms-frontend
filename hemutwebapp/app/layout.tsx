@@ -1,5 +1,4 @@
-import NavigationPanel from "./components/nav-components/NavigationPanel";
-import "./globals.css";
+import "./styles/globals.css";
 
 export const metadata = {
   title: "My App",
@@ -13,12 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <div className="app">
-          <NavigationPanel />
-          <main className="main-content">{children}</main>
-        </div>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

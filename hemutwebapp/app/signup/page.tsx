@@ -1,11 +1,11 @@
-import "../../styles/signuppage.css";
-import LogInHome from "../../components/login-components/LogInHome";
-import SignButton from "../../components/login-components/SignButton";
-import AccountPrompt from "../../components/login-components/AccountPrompt";
-import Greeting from "../../components/login-components/Greeting";
-import Card from "../../components/login-components/Card";
-import HemutLogo from "../../assets/HemutLogo";
-import LogIn from "../../components/login-components/LogIn";
+import "../styles/signuppage.css";
+import LogInHome from "../components/login-components/LogInHome";
+import SignButton from "../components/login-components/SignButton";
+import AccountPrompt from "../components/login-components/AccountPrompt";
+import Greeting from "../components/login-components/Greeting";
+import Card from "../components/login-components/Card";
+import HemutLogo from "../assets/HemutLogo";
+import LogIn from "../components/login-components/LogIn";
 const SignUpPage = () => {
   return (
     <LogInHome>
