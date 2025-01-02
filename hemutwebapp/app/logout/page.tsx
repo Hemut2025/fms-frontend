@@ -19,7 +19,7 @@ const LogoutPage = () => {
           <HemutLogo color="#072031" width="90" />
         </div>
         <LogIn>
-          <Greeting>Welcome Back</Greeting>
+          <Greeting>Welcome back</Greeting>
           <Card>Email</Card>
           <Card>Password</Card>
           <ForgotPassword />
