@@ -1,7 +1,8 @@
-type logInHomeProps = {
-  children?: React.ReactNode;
-};
-const LogInHome = ({ children }: logInHomeProps) => {
+export default function LogInLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <div
       style={{
@@ -14,6 +15,4 @@ const LogInHome = ({ children }: logInHomeProps) => {
       {children}
     </div>
   );
-};
-
-export default LogInHome;
+}
