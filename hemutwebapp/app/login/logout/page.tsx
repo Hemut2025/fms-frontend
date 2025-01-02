@@ -1,23 +1,18 @@
 "use client";
-import "../styles/loginpage.css";
-import HemutLogo from "../assets/HemutLogo";
-import Card from "../components/login-components/Card";
-import SignButton from "../components/login-components/SignButton";
-import AccountPrompt from "../components/login-components/AccountPrompt";
-import Greeting from "../components/login-components/Greeting";
-import LogIn from "../components/login-components/LogIn";
-import LogInHome from "../components/login-components/LogInHome";
+import "../../styles/loginpage.css";
+import Card from "../../components/login-components/Card";
+import SignButton from "../../components/login-components/SignButton";
+import AccountPrompt from "../../components/login-components/AccountPrompt";
+import Greeting from "../../components/login-components/Greeting";
+import LogIn from "../../components/login-components/LogIn";
+import LogInLeft from "@/app/components/login-components/LogInLeft";
+import LogInRight from "@/app/components/login-components/LogInRight";
 import { useState } from "react";
 const LogoutPage = () => {
   return (
-    <LogInHome>
-      <div className="leftLogo">
-        <HemutLogo color="#072031" width="130" />
-      </div>
-      <div className="rightSignup">
-        <div className="topLogo">
-          <HemutLogo color="#072031" width="90" />
-        </div>
+    <>
+      <LogInLeft />
+      <LogInRight>
         <LogIn>
           <Greeting>Welcome back</Greeting>
           <Card>Email</Card>
@@ -31,8 +26,8 @@ const LogoutPage = () => {
             href="/signup"
           />
         </LogIn>
-      </div>
-    </LogInHome>
+      </LogInRight>
+    </>
   );
 };
 
