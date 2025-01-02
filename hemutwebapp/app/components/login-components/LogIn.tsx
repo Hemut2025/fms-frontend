@@ -11,6 +11,7 @@ const LogIn = ({ children }: logInProps) => {
         // border: "5px green solid",
         display: "flex",
         flexDirection: "column",
+        gap: "5px",
       }}
     >
       {children}

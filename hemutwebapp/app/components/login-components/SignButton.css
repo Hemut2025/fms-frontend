@@ -5,10 +5,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease
+}
+.logButton:hover {
+    background-color: #FFC300;
 }
 .logButton p {
     margin:0px;
     padding: 0px 1px;
     white-space: nowrap;
     overflow: hidden;
+    color: #FFFFFF;
+}
+.logButton:hover p {
+    color: #111111;
 }
