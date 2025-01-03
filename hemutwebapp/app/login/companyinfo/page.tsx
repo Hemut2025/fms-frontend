@@ -18,7 +18,7 @@ const CompanyInfo = () => {
           <Card>Company name</Card>
           <Card>DOT Number</Card>
           <Card isSelect={true}>Company Size</Card>
-          <div style={{ padding: "2px 0" }}></div>
+          <div style={{ padding: "1vh 0" }}></div>
           <SignButton>Continue</SignButton>
         </LogIn>
       </OnboardingRight>

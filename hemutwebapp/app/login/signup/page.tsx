@@ -16,7 +16,7 @@ const SignUpPage = () => {
           <Card>Name</Card>
           <Card>Email</Card>
           <Card>Password</Card>
-          <div style={{ padding: "2px 0" }}></div>
+          <div style={{ padding: "1vh 0" }}></div>
           <SignButton>Sign Up</SignButton>
           <AccountPrompt
             message="Already have an account?"
