@@ -67,7 +67,7 @@ export default function DragDrop() {
     <>
       <div {...getRootProps({ className: "dropContainer" })}>
         <input {...getInputProps()} />
-        {isDragActive ? <p>Drop the files here ...</p> : <InsertHere />}
+        {isDragActive ? <p>Drop here</p> : <InsertHere />}
       </div>
 
       <div className="seeFiles">
@@ -139,11 +139,16 @@ const UploadedFilePopUp = ({
 
 const InsertHere = () => {
   return (
-    <div className="insertHere">
-      <PlusCircle />
-      <p className="dropFilesHere">Drop your files here</p>
-      <div className="browseText">Browse</div>
-    </div>
+    <>
+      <div className="pluslogo">
+        <PlusCircle />
+      </div>
+      <p className="file-drop-text">Drop your files here</p>
+      <p className="bottomWord">
+        <span className="browse-file">Browse file</span>
+        <span className="from-computer">from your computer</span>
+      </p>
+    </>
   );
 };
-const DropHere = () => {};
+// const DropHere = () => {};

@@ -5,50 +5,73 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height:25vh;
-    overflow: hidden;
+    min-height:25vh;
     border: 2px #C6C6C6 dashed;
-    
+    overflow: hidden;
+    margin-top: 5px;
 }
-.dropContainer p {
+
+.pluslogo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.file-drop-text {
+    color: var(--Black-L2, #363939);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+    padding: 0;
+    margin:0;
+    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width:100%;
     text-align: center;
-}
+  }
 
-.insertHere {
-    border: 5px pink solid;
-    width:90%;
-    min-height:80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
-    justify-content: center;
-}
 
-.dropFilesHere {
+  .bottomWord {
+    margin:0;
+    padding:0;
     width: 100%;
-    height: 4vh;
-    padding: 0;
-    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     text-align: center;
-    min-height: fit-content;
-}
-
-.browseText {
-    display: flex;
-    flex-direction: row;
-    flex-shrink: 0; /* Prevent shrinking */
-    justify-content: center;
+  }
+  .browse-file {
+    color: #1681EC;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 15px */
+    padding:0;
+    margin:0;
+  }
+  
+  .from-computer {
+    color: var(--Black-L3, #57595A);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding:0;
+    margin:0;
+    margin-left:4px;
 }
 
 .seeFiles {
     overflow-y: scroll;
     height: 15vh;
-    border: 3px seagreen solid;
+    /* border: 3px seagreen solid; */
 }
 
 .seeFiles::-webkit-scrollbar {

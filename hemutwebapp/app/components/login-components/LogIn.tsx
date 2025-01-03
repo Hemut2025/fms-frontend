@@ -8,7 +8,7 @@ const LogIn = ({ children }: logInProps) => {
         marginTop: "5vw",
         minHeight: "60vh",
         minWidth: "35vw",
-        // border: "5px green solid",
+        border: "5px green solid",
         display: "flex",
         flexDirection: "column",
         gap: "5px",
