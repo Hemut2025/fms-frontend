@@ -12,7 +12,7 @@ export default function OnboardingRight({
         width: "65vw",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        justifyContent: "flex-start",
         alignItems: "center",
       }}
     >
@@ -25,6 +25,7 @@ export default function OnboardingRight({
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
+          marginBottom: "2vh",
         }}
       >
         <HemutLogo color="#072031" width="90" />
