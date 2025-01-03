@@ -3,7 +3,6 @@ import { useState } from "react";
 import Selection from "./Selection";
 import DragDrop from "@/app/core/DragDrop";
 import SignButton from "./SignButton";
-import { Sign } from "crypto";
 type SelectionType = "csv" | "paper" | "manual";
 export default function Upload() {
   const [selectedType, setSelectedType] = useState<SelectionType>("csv");
